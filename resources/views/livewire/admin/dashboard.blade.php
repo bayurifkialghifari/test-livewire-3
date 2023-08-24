@@ -12,4 +12,6 @@
 
         <button type="submit">Save</button>
     </form>
+
+    <a href="{{ route('admin.test-href') }}" wire:navigate>Href</a>
 </div>

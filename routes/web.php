@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin/dashboard', App\Livewire\Admin\Dashboard::class);
+Route::get('/admin/dashboard', App\Livewire\Admin\Dashboard::class)->name('admin.dashboard');
+Route::get('/admin/test-href', App\Livewire\Admin\TestHref::class)->name('admin.test-href');
