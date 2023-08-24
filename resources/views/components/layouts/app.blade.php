@@ -6,11 +6,12 @@
 
         <title>{{ $title ?? 'Page Title' }}</title>
         @livewireStyles
+        @livewireScripts
     </head>
     <body>
 
         {{ $slot }}
 
-        @livewireScripts
+        @stack('scripts')
     </body>
 </html>
