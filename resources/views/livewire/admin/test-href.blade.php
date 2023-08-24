@@ -3,7 +3,13 @@
     <br>
 
     <button wire:click="confirmDelete">Delete</button>
-    <button wire:click="$dispatch('test-delete')">Delete</button>
+
+    <input wire:model.live="search" />
+
+    <br>
+    {{ $search }}
+    {{-- <button wire:click="$dispatch('test-delete')">Delete</button> --}}
+
     <a href="{{ route('admin.dashboard') }}" wire:navigate>Dashboard</a>
 
     @push('scripts')
