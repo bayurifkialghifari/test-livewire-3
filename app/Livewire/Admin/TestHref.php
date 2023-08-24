@@ -22,7 +22,7 @@ class TestHref extends Component
     }
 
     #[On('test-delete')]
-    public function delete() {
-        dd('GGWP');
+    public function delete($id) {
+        dd($id);
     }
 }

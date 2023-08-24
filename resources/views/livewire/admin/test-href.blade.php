@@ -20,7 +20,7 @@
 
                 console.log(param.action, ok)
 
-                Livewire.dispatch('test-delete')
+                Livewire.dispatch(param.action, {id: param.id})
             })
         })
 
